@@ -1,0 +1,33 @@
+{
+"JUnit5 Test Method": {
+"prefix": "test",
+"body": [
+"@Test",
+"public void ${1:shouldDoSomething}() {",
+" // given",
+" $2",
+" // when",
+" $3",
+" // then",
+" $4",
+"}"
+],
+"description": "Squelette méthode de test JUnit5"
+},
+"Singleton Pattern": {
+"prefix": "singleton",
+"body": [
+"public class ${1:Singleton} {",
+" private static ${1} instance;",
+" private ${1}() { }",
+" public static synchronized ${1} getInstance() {",
+" if (instance == null) {",
+" instance = new ${1}();",
+" }",
+" return instance;",
+" }",
+"}"
+],
+"description": "Pattern Singleton thread-safe"
+}
+}

@@ -1,0 +1,29 @@
+{
+  // Formatage
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "editor.formatOnSave": true,
+
+  // CheckStyle (si tu veux garder un linter Java)
+  "checkstyle.configurationFile": "${workspaceFolder}/config/checkstyle/google_checks.xml",
+
+  // Explorer & UI
+  "files.exclude": {
+    "**/target": true,
+    "**/.classpath": true,
+    "**/.project": true
+  },
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
+  "window.menuBarVisibility": "toggle",
+  "breadcrumbs.enabled": true,
+
+  // Suggestions & aide à la saisie
+  "editor.quickSuggestions": { "other": false, "comments": false, "strings": false },
+  "editor.suggestSelection": "first",
+  "editor.parameterHints.enabled": true,
+  "java.completion.favoriteStaticMembers": [
+    "org.junit.jupiter.api.Assertions.*",
+    "java.util.Objects.requireNonNull"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+"version": "0.2.0",
+"configurations": [
+{
+"type": "java",
+"name": "Debug App.main()",
+"request": "launch",
+"mainClass": "com.mistral.App",
+"projectName": "mon-repo-test"
+},
+{
+"type": "java",
+"name": "Debug JUnit Tests",
+"request": "launch",
+"console": "internalConsole",
+"mainClass": "org.junit.platform.console.ConsoleLauncher",
+"args": [
+"--select-package=com.mistral"
+]
+}
+]
+}
